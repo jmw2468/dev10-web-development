@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Julie White
+	Date Created: September 22, 2018
+	Most Recent Revision:  September 25, 2018
+-->
+
+<html lang = "en" >
+	
+	<head> 
+		<title> Contact Us </title>
+	</head>
+	
+	<body>
+		
+		<header>
+			<h1> McSpanky's Fine Dining <h1>
+		</header>
+		
+		<nav>
+			<hr />
+			<a href = "home.html" > Home </a><br />
+			<a href = "menu.html" > Menu </a><br />
+			<a href = "contact_us.html" > Contact Us </a><br />
+			<hr />
+		</nav>
+		
+		<form action = "feedback.html" method = "POST">
+			
+			<label for "guestName"> Name: </label> 
+				<input type = "text" id = "guestName" name = "guestName"><br />
+			<label for "guestEmail"> Email: </label> 
+				<input type = "text" id = "guestEmail" name = "guestEmail"><br />
+			<label for "guestPhone"> Phone: </label> 
+				<input type = "text" id = "guestPhone" name = "guestPhone"><br />
+			
+			<label for = "reason"> Reasons for Inquiry </label>
+			<select id = "reason" name = "reason">
+				<option value = "catering" selected> Catering </option>
+				<option value = "privateParty"> Private Party </option>
+				<option value = "feedback"> Feedback </option>
+				<option value = "other"> Other </option>
+			</select><br />
+			
+			<label for = "addInfo"> Additional Information </label>
+				<textarea id = "addInfo" name = "addInfo"></textarea>
+			<br />
+		
+			<legend> Have you been to McSpanky's before? </legend>
+				<input type = "radio" id = "option1" name = "retuning" value = "no">
+				<label for = "no"> No </label>
+				<input type = "radio" id = "option2" name = "retuning" value = "yes">
+				<label for = "yes"> Yes </label>
+			<br />
+			
+			<legend> Best days to contact you: </legend>
+				<input type = "checkbox" id = "mon" name = "contact" value = "mon">
+				<label for = "mon"> M </label>
+				<input type = "checkbox" id = "tue" name = "contact" value = "tue">
+				<label for = "tue"> T </label>
+				<input type = "checkbox" id = "wed" name = "contact" value = "wed">
+				<label for = "wed"> W </label>
+				<input type = "checkbox" id = "thur" name = "contact" value = "thur">
+				<label for = "thur"> Th </label>
+				<input type = "checkbox" id = "fri" name = "contact" value = "fri">
+				<label for = "fri"> F </label>
+			<br />
+			
+			<input type = "submit" name = "submit" value = "Send Request">
+			
+		</form>		
+		
+		<footer>
+			
+			<hr />				
+			<p> 123 Actual Lane <br />
+				Podunk, MA, 55555 <br />
+				123-456-7890 
+			</p>
+
+		</footer>
+		
+	</body>
+	
+</html>
