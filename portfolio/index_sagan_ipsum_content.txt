@@ -1,0 +1,80 @@
+<section>
+		
+				<article id = "about_me" >
+		
+					<h2><em> About Me </em></h2>
+					
+					<img src = "images/my_face.jpg " alt = "Portrait of Julie White" />
+			
+					<p> <strong> Lorem Sagan ipsum </strong> hydrogen atoms Flatland galaxies quasar courage of our 
+						questions the ash of stellar alchemy. Something incredible is waiting to be known at the edge
+						of forever star stuff harvesting star light how far away vel illum qui dolorem eum fugiat quo 
+						voluptas nulla pariatur inconspicuous motes of rock and gas. With pretty stories for which 
+						there's little good evidence take root and flourish invent the universe qui dolorem ipsum quia 
+						dolor sit amet consectetur as a patch of light.
+					</p>
+			
+					<p> Worldlets permanence of the stars cosmic fugue qui dolorem ipsum quia dolor sit amet billions
+						upon billions colonies? A very small stage in a vast cosmic arena Rig Veda extraordinary 
+						claims require <strong>extraordinary evidence realm of the galaxies</strong> concept of the 
+						number one nisi ut aliquid ex ea commodi consequatur. Descended from astronomers adipisci velit
+						Neque porro	quisquam est dispassionate extraterrestrial observer network of wormholes invent the
+						universe.
+					</p>
+				
+				</article>
+			
+			
+				<article id = "past_experiences" >		
+		
+					<h2><em> Past Experiences </em></h2>
+					
+					<img src = "images/coding.jpg " alt = "Image of Computer with Code" />
+			
+		
+					<p> Cambrian explosion cosmic ocean Rig Veda inconspicuous motes of rock and gas brain is the seed
+						of intelligence star stuff harvesting star light? <span style = "background-color: lightblue; 
+						border: thin solid darkblue;" >Circumnavigated across the centuries Ut enim ad minima veniam at 
+						the edge of forever from which we spring ship of the imagination.</span> Quis autem	vel eum iure 
+						reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur network of wormholes
+						hearts of the stars at the edge of forever sed quia non numquam eius modi tempora incidunt ut labore
+						et dolore magnam aliquam quaerat voluptatem the only home we've ever known.
+					</p>
+			
+					<p> Venture rogue Ut enim ad minima veniam Flatland emerged into consciousness a still more glorious
+						dawn awaits. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur Neque porro quisquam est
+						rich in mystery bits of moving fluff take root and flourish a mote of dust suspended in a sunbeam. 
+						Hydrogen atoms inconspicuous motes of rock and gas a very small stage in a vast cosmic arena with 
+						pretty stories for which there's little good evidence the only home we've ever known across the 
+						centuries.
+					</p>
+			
+				</article>
+			
+			
+				<article id = "hobbies" >
+				
+					<h2><em> Hobbies </em></h2>
+					
+					<img src = "images/gaming.jpg " alt = "Image of Video Game" />
+			
+		
+					<p> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+						consequatur concept of the number one a still more glorious dawn awaits birth trillion light years.
+						Rich in mystery muse about Orion's sword prime number cosmic ocean colonies. With pretty stories for
+						which there's little good evidence qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor 
+						sit amet hundreds of thousands a mote of dust suspended in a sunbeam Sea of Tranquility.
+					</p>
+			
+					<p> Concept of the number one rich in mystery finite but unbounded Orion's sword as a patch of light 
+						galaxies. Vastness is bearable only through love citizens of distant epochs at the edge of forever a 
+						very small stage in a vast cosmic arena gathered by gravity intelligent beings. Ut enim ad minima 
+						veniam Ut enim ad minima veniam preserve and cherish that pale blue dot the ash of stellar alchemy 
+						consectetur gathered by gravity and billions upon billions upon billions upon billions upon billions 
+						upon billions upon billions.
+					</p>
+				
+				</article>
+			
+			</section>
+		
