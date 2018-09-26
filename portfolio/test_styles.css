@@ -1,0 +1,16 @@
+body {
+	background-color: gainsboro;
+}
+	
+header, footer {
+	background-color: mediumblue;
+	color: white;
+}
+
+.border {
+	border: thick solid blue;
+}
+	
+#past_experiences {
+	border: thick dashed slategray;
+}
