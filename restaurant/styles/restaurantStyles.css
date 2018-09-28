@@ -1,0 +1,82 @@
+/*
+Creator: Julie White
+Date created: September 26, 2018
+Date last modified: September 28, 2018
+*/
+
+header, footer {
+	text-align: center;
+	background-color: #bf211e;
+	color: #f9df74;
+	font-family: 'Kodchasan', sans-serif;
+}
+
+header {
+	height: 150px;
+	padding: 30px 10px 30px 10px;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h3 {
+	font-family: 'Kodchasan', sans-serif;
+	text-align: center;
+	font-size: 3.0em;
+	padding: 20px 10px 20px 10px;
+}
+
+hr {
+	width: 50%;
+	border: thin solid #1e2019;
+}
+
+p {
+	font-family: 'Kodchasan', sans-serif;
+	text-align: center;
+	font-size: 2.0em;
+	padding: 20px 10px 20px 10px;
+}
+
+footer {
+	padding: 5px;
+	font-size: 1.5em;
+}
+
+article, table, form {
+	padding: 75px;
+}	
+
+body {
+	background-color: #fc9e4f;
+}
+
+nav a {
+	font-family: 'Kodchasan', sans-serif;
+	background-color: #bf211e;
+	color: #f9df74;
+	padding: 8px;
+	border: thin solid #1e2019;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 10px;
+	width: 150px;
+	float: left;
+}
+
+nav a:hover {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+nav a:visited {
+	background-color: #ff220c;
+}
+
+nav a:active {
+	text-decoration: none;
+	background-color: #f9df74;
+	color: #ff220c;
+}

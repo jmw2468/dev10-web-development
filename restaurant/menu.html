@@ -3,13 +3,37 @@
 <!--
 	Name: Julie White
 	Date Created: September 22, 2018
-	Most Recent Revision:  September 25, 2018
+	Most Recent Revision:  September 28, 2018
 -->
 
 <html lang = "en" >
 	
 	<head> 
 		<title> Menu </title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Jockey+One|Kodchasan|Ranchers" rel="stylesheet">
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		<style>
+			th {
+				font-size: 1.5em;
+				text-align: center;
+			}
+			
+			table {
+				font-family: 'Kodchasan', sans-serif;
+				text-align: center;
+				margin: auto;
+			}
+			
+			table, th {
+				height: 30px;
+			}
+			.price {
+				font-weight: bold;
+			}
+			.food{
+				
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -19,14 +43,12 @@
 		</header>
 		
 		<nav>
-			<hr />
-			<a href = "home.html" > Home </a><br />
-			<a href = "menu.html" > Menu </a><br />
-			<a href = "contact_us.html" > Contact Us </a><br />
-			<hr />
+			<a href = "home.html" > Home </a>
+			<a href = "menu.html" > Menu </a>
+			<a href = "contact_us.html" > Contact Us </a>
 		</nav>
 		
-		<table> 
+		<table class = "food"> 
 			<tr>
 				<th> Burger and Fries </th>
 				<th> Hot Dog and Chips </th>
@@ -52,14 +74,14 @@
 				<td> Served with our home-made chips </td>
 				<td> Served with garlic mashers </td>
 			</tr>
-			<tr>
+			<tr class = "price">
 				<td> $7.95 </td>
 				<td> $7.95 </td>
 				<td> $10.95 </td>
 			</tr>
 		</table>
 		
-		<table>
+		<table class = "food">
 			<tr>
 				<th> Tenderloin Sandwich and Chips </th>
 				<th> House Salad </th>
@@ -85,17 +107,42 @@
 				<td> Served with a Dinner Roll </td>
 				<td> Served with our famous angel-cut french fries </td>
 			</tr>
-			<tr>
+			<tr class = "price">
 				<td> $8.95 </td>
 				<td> $6.95 </td>
 				<td> $7.95 </td>
 			</tr>
 		</table>
 		
+		<table class = "drink">
+			<tr>
+				<th colspan = 2> Beverages </th>
+			</tr>	
+			
+			<tr>
+				<td> Root Beer </td>
+				<td class = "price"> $3.00 </td>
+			</tr>
+			
+			<tr>
+				<td> Bottled Water </td>
+				<td class = "price"> $1.50 </td>
+			</tr>
+			
+			<tr>
+				<td> Lemonade </td>
+				<td class = "price"> $3.00 </td>
+			</tr>
+			
+			<tr>
+				<td> Iced Tea </td>
+				<td class = "price"> $1.25 </td>
+			</tr>
+			
+		</table>
 		
 		<footer>
 		
-			<hr />				
 			<p> 123 Actual Lane <br />
 				Podunk, MA, 55555 <br />
 				123-456-7890 

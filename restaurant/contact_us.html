@@ -3,13 +3,71 @@
 <!--
 	Name: Julie White
 	Date Created: September 22, 2018
-	Most Recent Revision:  September 25, 2018
+	Most Recent Revision:  September 28, 2018
 -->
 
 <html lang = "en" >
 	
 	<head> 
 		<title> Contact Us </title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Jockey+One|Kodchasan|Ranchers" rel="stylesheet">
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		<style>
+			.required {
+				font-weight: bold;
+			}
+			fieldset {
+				padding: 12px 20px;
+				margin: 12px 0;
+				border: none;
+			}
+			label, fieldset {
+				font-size: 1.1em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			input[type = text] {
+				border: 2px solid #1e2019;
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				font-size: 1.1em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			input[type = submit] {
+				font-size: 1.2em;
+				font-family: 'Kodchasan', sans-serif;
+				background-color: #f9df74;
+				color: #ff220c;
+				border: thin solid #1e2019;
+				padding: 4px 8px;
+				margin-bottom: 10px;
+			}
+			input[type = submit]:hover {
+				background-color: #ff220c;
+				color: #f9df74;
+			}
+			input[type = submit]:active {
+				font-weight: bold;
+			}
+			textarea {
+				width: 50%;
+				font-family: 'Kodchasan', sans-serif;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #1e2019;
+				border-radius: 3px;
+				background-color: #ffffff;
+				resize: none;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -19,53 +77,59 @@
 		</header>
 		
 		<nav>
-			<hr />
-			<a href = "home.html" > Home </a><br />
-			<a href = "menu.html" > Menu </a><br />
-			<a href = "contact_us.html" > Contact Us </a><br />
-			<hr />
+			<a href = "home.html" > Home </a>
+			<a href = "menu.html" > Menu </a>
+			<a href = "contact_us.html" > Contact Us </a>
 		</nav>
 		
 		<form action = "feedback.html" method = "POST">
 			
-			<label for "guestName"> Name: </label> 
+			<label for "guestName" class = "required" > Name: </label> 
 				<input type = "text" id = "guestName" name = "guestName"><br />
-			<label for "guestEmail"> Email: </label> 
+			<label for "guestEmail" class = "required" > Email: </label> 
 				<input type = "text" id = "guestEmail" name = "guestEmail"><br />
 			<label for "guestPhone"> Phone: </label> 
 				<input type = "text" id = "guestPhone" name = "guestPhone"><br />
 			
-			<label for = "reason"> Reasons for Inquiry </label>
+			<label for = "reason" class = "required" > Reasons for Inquiry: </label>
 			<select id = "reason" name = "reason">
 				<option value = "catering" selected> Catering </option>
 				<option value = "privateParty"> Private Party </option>
 				<option value = "feedback"> Feedback </option>
 				<option value = "other"> Other </option>
-			</select><br />
+			</select><br /><br /><br />
 			
-			<label for = "addInfo"> Additional Information </label>
+			<label for = "addInfo"> Additional Information </label> <br />
 				<textarea id = "addInfo" name = "addInfo"></textarea>
 			<br />
-		
-			<legend> Have you been to McSpanky's before? </legend>
-				<input type = "radio" id = "option1" name = "retuning" value = "no">
-				<label for = "no"> No </label>
-				<input type = "radio" id = "option2" name = "retuning" value = "yes">
-				<label for = "yes"> Yes </label>
-			<br />
 			
-			<legend> Best days to contact you: </legend>
-				<input type = "checkbox" id = "mon" name = "contact" value = "mon">
-				<label for = "mon"> M </label>
-				<input type = "checkbox" id = "tue" name = "contact" value = "tue">
-				<label for = "tue"> T </label>
-				<input type = "checkbox" id = "wed" name = "contact" value = "wed">
-				<label for = "wed"> W </label>
-				<input type = "checkbox" id = "thur" name = "contact" value = "thur">
-				<label for = "thur"> Th </label>
-				<input type = "checkbox" id = "fri" name = "contact" value = "fri">
-				<label for = "fri"> F </label>
-			<br />
+			<fieldset>
+		
+				<legend> Have you been to McSpanky's before? </legend>
+					<input type = "radio" id = "option1" name = "retuning" value = "no">
+					<label for = "no"> No </label>
+					<input type = "radio" id = "option2" name = "retuning" value = "yes">
+					<label for = "yes"> Yes </label>
+				<br />
+			
+			</fieldset>
+			
+			<fieldset>
+			
+				<legend class = "required" > Best days to contact you: </legend>
+					<input type = "checkbox" id = "mon" name = "contact" value = "mon">
+					<label for = "mon"> M </label>
+					<input type = "checkbox" id = "tue" name = "contact" value = "tue">
+					<label for = "tue"> T </label>
+					<input type = "checkbox" id = "wed" name = "contact" value = "wed">
+					<label for = "wed"> W </label>
+					<input type = "checkbox" id = "thur" name = "contact" value = "thur">
+					<label for = "thur"> Th </label>
+					<input type = "checkbox" id = "fri" name = "contact" value = "fri">
+					<label for = "fri"> F </label>
+				<br />
+			
+			</fieldset>
 			
 			<input type = "submit" name = "submit" value = "Send Request">
 			
@@ -73,7 +137,6 @@
 		
 		<footer>
 			
-			<hr />				
 			<p> 123 Actual Lane <br />
 				Podunk, MA, 55555 <br />
 				123-456-7890 
