@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--
+Creator: Julie White
+Date created: September 28, 2018
+Date last modified: September 30, 2018
+-->
+
+<html lang = "en">
+
+	<head>
+		
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title> Lucky Sevens Game </title>
+		<script type = "text/javascript" src = "scripts/lucky7Gamescript.js"></script>
+		
+		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous"> 
+		<link href = "styles/lucky7Styles.css" rel = "stylesheet" type = "text/css" />
+
+	</head>
+
+	
+	<body onload = "noDisplay()">
+
+		<header>
+			<h1> Lucky Sevens </h1>
+		</header>
+		
+		<div class = "container">
+			<div class = "row">			
+				<div class = "col-lg col-md"> 
+					<span><label for = "startingBet"> Starting Bet (in Dollars): </label>
+						<input type = "text" name = "startingBet" id = "startingBet"> 
+					</span> 
+				</div>
+			</div>
+		</div>
+		
+		<div class = "container">
+			<div class = "row">			
+				<div class = "col-lg col-md"> 
+					<button class = "btn center-block" onclick = "playGame()" id = "playButton"> Play Game </button>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "container-fluid" id = "results">
+		
+			<p> To play again, input Starting Bet and click the Button! </p> 
+	
+			<table class = "table table-striped">
+				
+				<tr>
+					<th colspan = "2"> Game Results </th>
+				</tr>
+				
+				<tr>
+					<td id = "caption"> Starting Bet </td>
+					<td id = "startBet"></td>
+				</tr>
+				
+				<tr>
+					<td id = "caption"> Total Number of Rolls </td>
+					<td id = "numRoll" ></td>
+				</tr>
+				
+				<tr>
+					<td id = "caption"> Highest Amount Won </td>
+					<td id = "maxWin" ></td>
+				</tr>
+				
+				<tr>
+					<td id = "caption"> Roll Count at Highest Amount Won </td>
+					<td id = "winRoll" ></td>
+				</tr>
+				
+			</table>
+		
+		</div>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+	</body>
+
+</html>
+	

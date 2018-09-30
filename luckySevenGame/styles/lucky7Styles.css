@@ -1,0 +1,97 @@
+/*
+Creator: Julie White
+Date created: September 30, 2018
+Date last modified: September 30, 2018
+*/
+
+label {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 100px;
+	
+}
+input{
+	position: relative; 
+	left: 5%; 
+	
+}
+
+input[type = text] {
+	border: 2px solid #30343f;
+	width: 25%;
+	padding: 8px 8px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	font-size: 1.0em;
+	font-weight: none;
+}
+
+body {
+	background-color: #f9f9fa;
+	font-family: arial, helvetica, sans-serif;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #e0412c;
+	color: #ffffff;
+	height: 125px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+#content {
+	display: block;
+}
+
+.btn {
+	width: 200px;
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #e0412c;
+	color: #ffffff;
+	padding: 4px 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn:hover {
+	background-color: #30343f;
+	color: #cd5334;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table th {
+    text-align: center;
+}
+
+#caption{
+    color: #cd5334;
+}
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+	margin: auto;
+    float: none;
+}
+
+p {
+	color: #cd5334;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 50px;
+}
