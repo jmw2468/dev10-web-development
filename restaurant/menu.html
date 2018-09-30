@@ -3,30 +3,60 @@
 <!--
 	Name: Julie White
 	Date Created: September 22, 2018
-	Most Recent Revision:  September 25, 2018
+	Most Recent Revision:  September 28, 2018
 -->
 
 <html lang = "en" >
 	
 	<head> 
 		<title> Menu </title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Jockey+One|Kodchasan|Ranchers" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous"> 
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		
+		<noscript> This site is best viewed with JavaScript enabled. Here are the <a href = "http://www.enable-javascript.com" target = "_blank"> instructions how to enable JavaScript in your web browser </a></noscript>
+		
+		<style>
+			th {
+				font-size: 1.5em;
+				text-align: center;
+			}
+			
+			table {
+				font-family: 'Kodchasan', sans-serif;
+				text-align: center;
+				margin: auto;
+			}
+			
+			table, th {
+				height: 30px;
+			}
+			.price {
+				font-weight: bold;
+			}
+			
+		</style> 
 	</head>
 	
 	<body>
 		
 		<header>
-			<h1> McSpanky's Fine Dining <h1>
+			<div class = "jumbotron">
+				<h1> McSpanky's Fine Dining <h1>
+				<hr />
+				<h2> BIG NEWS! New Location Opening Soon! </h2>
+			</div>
 		</header>
 		
 		<nav>
-			<hr />
-			<a href = "home.html" > Home </a><br />
-			<a href = "menu.html" > Menu </a><br />
-			<a href = "contact_us.html" > Contact Us </a><br />
-			<hr />
+			<a href = "home.html" class = "btn tab"><span class="fa fa-home"></span></a>
+			<a class = "btn tab" href = "menu.html" > Menu </a>
+			<a class = "btn tab" href = "contact_us.html" > Contact Us </a>
 		</nav>
 		
-		<table> 
+		<table class = "table table-sm table-borderless"> 
 			<tr>
 				<th> Burger and Fries </th>
 				<th> Hot Dog and Chips </th>
@@ -52,14 +82,14 @@
 				<td> Served with our home-made chips </td>
 				<td> Served with garlic mashers </td>
 			</tr>
-			<tr>
+			<tr class = "price">
 				<td> $7.95 </td>
 				<td> $7.95 </td>
 				<td> $10.95 </td>
 			</tr>
 		</table>
 		
-		<table>
+		<table class = "table table-sm table-borderless">
 			<tr>
 				<th> Tenderloin Sandwich and Chips </th>
 				<th> House Salad </th>
@@ -85,7 +115,7 @@
 				<td> Served with a Dinner Roll </td>
 				<td> Served with our famous angel-cut french fries </td>
 			</tr>
-			<tr>
+			<tr class = "price">
 				<td> $8.95 </td>
 				<td> $6.95 </td>
 				<td> $7.95 </td>
@@ -93,15 +123,46 @@
 		</table>
 		
 		
+		<table class = "table table-sm table-borderless col-lg-3 col-md-3" >
+			<tr>
+				<th colspan = 2> Beverages </th>
+			</tr>	
+			
+			<tr>
+				<td> Root Beer </td>
+				<td class = "price"> $3.00 </td>
+			</tr>
+			
+			<tr>
+				<td> Bottled Water </td>
+				<td class = "price"> $1.50 </td>
+			</tr>
+			
+			<tr>
+				<td> Lemonade </td>
+				<td class = "price"> $3.00 </td>
+			</tr>
+			
+			<tr>
+				<td> Iced Tea </td>
+				<td class = "price"> $1.25 </td>
+			</tr>
+			
+		</table>
+		
 		<footer>
 		
-			<hr />				
 			<p> 123 Actual Lane <br />
 				Podunk, MA, 55555 <br />
 				123-456-7890 
 			</p>
 
 		</footer>
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		
 	</body>
 	

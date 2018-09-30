@@ -3,13 +3,55 @@
 <!--
 	Name: Julie White
 	Date Created: September 22, 2018
-	Most Recent Revision: September 25, 2018 
+	Most Recent Revision: September 28, 2018 
 -->
 
 <html lang = "en" >
 	
 	<head> 
 		<title> Home Page </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Jockey+One|Kodchasan|Ranchers" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous"> 
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		
+		<noscript> This site is best viewed with JavaScript enabled. Here are the <a href = "http://www.enable-javascript.com" target = "_blank"> instructions how to enable JavaScript in your web browser </a></noscript>
+		
+		<style>
+			#myCarousel img {
+				max-width: 100%;
+				max-height: 100%
+			}
+			
+			.carousel-caption h3 {
+				font-family: 'Kodchasan', sans-serif;
+				font-size: 3.0em;
+				font-weight: bold;
+			}
+			
+			.carousel-caption {
+				font-weight: bold;
+			}
+			
+			.carousel-control  {
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				background-image: none;
+				z-index: 5;
+			}
+			
+			
+		</style>		
+	
 	</head>
 	
 	<body>
@@ -17,34 +59,92 @@
 		<main>
 		
 			<header>
-				<h1> McSpanky's Fine Dining <h1>
+				<div class = "jumbotron">
+					<h1> McSpanky's Fine Dining <h1>
+					<hr />
+					<h2> BIG NEWS! New Location Opening Soon! </h2>
+				</div>
 			</header>
 		
+			<div id = "navBar">
 			<nav>
-				<hr />
-				<a href = "home.html" > Home </a><br />
-				<a href = "menu.html" > Menu </a><br />
-				<a href = "contact_us.html" > Contact Us </a><br />
-				<hr />
+				<a class = "btn tab" href = "home.html" ><span class = "fa fa-home"></span></a>
+				<a class = "btn tab" href = "menu.html" > Menu </a>
+				<a class = "btn tab" href = "contact_us.html" > Contact Us </a>
 			</nav>
+			</div>
 			
-			<img src = images/food.jpg alt = "Image of Restaurant Food" style = "width: 400px;" /><br />
+			<article>  
 			
-			<p> Restaurant Description </p>
+				
+				<div id = "myCarousel" class = "carousel slide container-fluid" data-ride = "carousel" style = "width: 800px; height:500px; margin: 0 auto">
+				
+					<ol class = "carousel-indicators">
+						<li data-target = "#myCarousel" data-slide-to=  "0" class = "active"></li>
+						<li data-target = "#myCarousel" data-slide-to = "1"></li>
+						<li data-target = "#myCarousel" data-slide-to = "2"></li>
+					</ol>
+
+					<div class = "carousel-inner">
+						<div class = "item active" >
+							<img src = "images/restaurant-size.jpg" alt = "New Restaurant" class="d-block w-100">
+							<div class="carousel-caption">
+								<h3> We've got a New Location! </h3>
+								<p> Located on the corner of Hurp Street and Derp Lane </p>
+							</div>
+						</div>
+
+						<div class = "item">
+							<img src = "images/menu-size.jpg" alt = "Menu Food" class="d-block w-100">
+							<div class = "carousel-caption">
+								<h3> Seasonal Menu is Back! </h3>
+								<p> We're rolling out our seasonal menu with special options </p>
+							</div>
+						</div>
+
+						<div class = "item" >
+							<img src = "images/beer-size.jpg" alt = "Drink of the Month" class="d-block w-100">
+							<div class = "carousel-caption">
+								<h3> Drink of the Month! </h3>
+								<p> This month's special is SG Special Brew </p>
+							</div>
+						</div>
+					</div>
+
+					<a class = "left carousel-control" href = "#myCarousel" data-slide = "prev">
+						<span class = "fa fa-chevron-left"></span>
+						<span class = "sr-only"> Previous </span>
+					</a>
+					<a class = "right center carousel-control" href = "#myCarousel" data-slide = "next">
+						<span class = "fa fa-chevron-right"></span>
+						<span class = "sr-only"> Next </span>
+					</a>
+				</div>
+				
+				<br /><br /><br />
 			
-			<p> Spicy jalapeno bacon ipsum dolor amet aliquip tri-tip anim consectetur meatloaf ut mollit
-				burgdoggen ground round picanha. Quis shank turducken brisket cillum ham do shankle bresaola
-				ribeye. Deserunt landjaeger pork loin, turducken pork belly adipisicing qui. Spare ribs in 
-				leberkas in ham anim ad consectetur. T-bone eiusmod short ribs andouille, rump frankfurter 
-				biltong ut flank nulla fugiat jerky tempor pig voluptate. Doner laborum commodo picanha ham 
-				hock short loin. Quis chicken cupidatat mollit, cupim venison exercitation jerky ribeye esse
-				est ham culpa t-bone turkey.
-			</p>
+				<div class = "container">
+			
+					<p style = "font-size: 2.5em"> Restaurant Description </p>
+				
+					<hr />
+			
+					<p>	Spicy jalapeno bacon ipsum dolor amet aliquip tri-tip anim consectetur meatloaf ut mollit
+						burgdoggen ground round picanha. Quis shank turducken brisket cillum ham do shankle bresaola
+						ribeye. Deserunt landjaeger pork loin, turducken pork belly adipisicing qui. Spare ribs in 
+						leberkas in ham anim ad consectetur. T-bone eiusmod short ribs andouille, rump frankfurter 
+						biltong ut flank nulla fugiat jerky tempor pig voluptate. Doner laborum commodo picanha ham 
+						hock short loin. Quis chicken cupidatat mollit, cupim venison exercitation jerky ribeye esse
+						est ham culpa t-bone turkey.
+					</p>
+				
+				</div>
+			
+			</article>  
 		
 		
 			<footer>
 				
-				<hr />				
 				<p> 123 Actual Lane <br />
 					Podunk, MA, 55555 <br />
 					123-456-7890 
@@ -53,6 +153,10 @@
 			</footer>
 			
 		</main>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		
 	</body>
 	

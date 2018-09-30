@@ -3,83 +3,191 @@
 <!--
 	Name: Julie White
 	Date Created: September 22, 2018
-	Most Recent Revision:  September 25, 2018
+	Most Recent Revision:  September 28, 2018
 -->
 
 <html lang = "en" >
 	
 	<head> 
 		<title> Contact Us </title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Jockey+One|Kodchasan|Ranchers" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous"> 
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script><noscript> This site is best viewed with JavaScript enabled. Here are the <a href = "http://www.enable-javascript.com" target = "_blank"> instructions how to enable JavaScript in your web browser </a></noscript>
+		
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		
+		<style>
+			div.form-check, div.form-group {
+				padding: 12px 20px;
+				margin: 12px 0;
+				border: none;
+			}
+			label, legend {
+				font-weight: bold;
+				font-size: 1.5em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			input[type = text], input[type = email], input[type = number], #reason, #addInfo {
+				border: 2px solid #1e2019;
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				font-size: 1em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+				font-family: 'Kodchasan', sans-serif;
+			}
+			input[type = submit] {
+				font-size: 1.2em;
+				font-family: 'Kodchasan', sans-serif;
+				background-color: #f9df74;
+				color: #ff220c;
+				border: thin solid #1e2019;
+				padding: 4px 8px;
+				margin-bottom: 10px;
+			}
+			input[type = submit]:hover {
+				background-color: #ff220c;
+				color: #f9df74;
+			}
+			input[type = submit]:active {
+				font-weight: bold;
+			}
+			textarea {
+				width: 50%;
+				font-family: 'Kodchasan', sans-serif;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #1e2019;
+				border-radius: 3px;
+				background-color: #ffffff;
+				resize: none;
+			}
+		</style>
 	</head>
 	
 	<body>
 		
 		<header>
-			<h1> McSpanky's Fine Dining <h1>
+			<div class = "jumbotron">
+				<h1> McSpanky's Fine Dining <h1>
+				<hr />
+				<h2> BIG NEWS! New Location Opening Soon! </h2>
+			</div>
 		</header>
 		
 		<nav>
-			<hr />
-			<a href = "home.html" > Home </a><br />
-			<a href = "menu.html" > Menu </a><br />
-			<a href = "contact_us.html" > Contact Us </a><br />
-			<hr />
+			<a href = "home.html" class = "btn tab"><span class = "fa fa-home"></span></a>
+			<a class = "btn tab" href = "menu.html" > Menu </a>
+			<a class = "btn tab" href = "contact_us.html" > Contact Us </a>
 		</nav>
 		
-		<form action = "feedback.html" method = "POST">
+		<form name= "contactForm" role = "form" data-toggle = "validator" novalidate = "true" action = "" method = "">
 			
-			<label for "guestName"> Name: </label> 
-				<input type = "text" id = "guestName" name = "guestName"><br />
-			<label for "guestEmail"> Email: </label> 
-				<input type = "text" id = "guestEmail" name = "guestEmail"><br />
-			<label for "guestPhone"> Phone: </label> 
-				<input type = "text" id = "guestPhone" name = "guestPhone"><br />
+			<div class = "form-group">
+				<label for "guestName" class = "required" > Name: </label> 
+				<input class = "form-control" type = "text" id = "guestName" name = "guestName" data-error = "Please fill out this field!" required = "required"><br />
+				<div class="help-block with-errors"></div>
+			</div>
 			
-			<label for = "reason"> Reasons for Inquiry </label>
-			<select id = "reason" name = "reason">
-				<option value = "catering" selected> Catering </option>
-				<option value = "privateParty"> Private Party </option>
-				<option value = "feedback"> Feedback </option>
-				<option value = "other"> Other </option>
-			</select><br />
+			<div class = "form-group">
+				<label for "guestEmail" class = "required" > Email: </label> 
+				<input class = "form-control" type = "email" id = "guestEmail" name = "guestEmail" data-error = "Please fill out this field!" required = "required"><br />
+				<div class="help-block with-errors"></div>
+			</div>
 			
-			<label for = "addInfo"> Additional Information </label>
-				<textarea id = "addInfo" name = "addInfo"></textarea>
-			<br />
-		
-			<legend> Have you been to McSpanky's before? </legend>
-				<input type = "radio" id = "option1" name = "retuning" value = "no">
-				<label for = "no"> No </label>
-				<input type = "radio" id = "option2" name = "retuning" value = "yes">
-				<label for = "yes"> Yes </label>
-			<br />
+			<div class = "form-group">
+				<label for "guestPhone"> Phone: </label> 
+				<input class = "form-control" type = "number" id = "guestPhone" name = "guestPhone"><br />
+			</div>
 			
-			<legend> Best days to contact you: </legend>
-				<input type = "checkbox" id = "mon" name = "contact" value = "mon">
-				<label for = "mon"> M </label>
-				<input type = "checkbox" id = "tue" name = "contact" value = "tue">
-				<label for = "tue"> T </label>
-				<input type = "checkbox" id = "wed" name = "contact" value = "wed">
-				<label for = "wed"> W </label>
-				<input type = "checkbox" id = "thur" name = "contact" value = "thur">
-				<label for = "thur"> Th </label>
-				<input type = "checkbox" id = "fri" name = "contact" value = "fri">
-				<label for = "fri"> F </label>
-			<br />
+			<div class = "form-group">	
+				<label for = "reason" class = "required" > Reasons for Inquiry: </label>
+				<select class = "form-control" id = "reason" name = "reason" data-error = "Please fill out this field!" required = "required">
+					<option value = "catering" selected> Catering </option>
+					<option value = "privateParty"> Private Party </option>
+					<option value = "feedback"> Feedback </option>
+					<option value = "other"> Other </option>
+				</select>
+			</div>
 			
-			<input type = "submit" name = "submit" value = "Send Request">
+			<div class = "form-group">
+				<label for = "addInfo"> Additional Information </label> <br />
+				<textarea class = "form-control" id = "addInfo" name = "addInfo"></textarea>
+				<br />
+			</div>
+			
+			<legend class = "col-form-legend-lg"> Have you been to McSpanky's before? </legend>
+			
+			<div class = "form-check form-check-inline">
+				<input class = "form-check-input" type = "radio" id = "option1" name = "retuning" value = "no">
+				<label class = "form-check-label col-form-label" for = "no"> No </label>
+			</div>
+
+			<div class = "form-check form-check-inline">
+				<input class = "form-check-input" type = "radio" id = "option2" name = "retuning" value = "yes">
+				<label class = "form-check-label col-form-label" for = "yes"> Yes </label>
+				<br />
+			</div>
+			
+			
+			<legend class = "col-form-legend-lg" > Best days to contact you: </legend>
+			
+			<div class = "form-check form-check-inline">
+				<input class = "form-check-input " type = "checkbox" id = "mon" name = "contact" value = "mon">
+				<label class = "form-check-label col-form-label" for = "mon"> M </label>
+			</div>
+			
+			<div class = "form-check form-check-inline">
+				<input class = "form-check-input" type = "checkbox" id = "tue" name = "contact" value = "tue">
+				<label class = "form-check-label col-form-label" for = "tue"> T </label>
+			</div>
+			
+			<div class = "form-check form-check-inline">
+				<input class = "form-check-input" type = "checkbox" id = "wed" name = "contact" value = "wed">
+				<label class = "form-check-label col-form-label" for = "wed"> W </label>
+			</div>
+			
+			<div class = "form-check form-check-inline">	
+				<input class = "form-check-input" type = "checkbox" id = "thur" name = "contact" value = "thur">
+				<label class = "form-check-label col-form-label" for = "thur"> Th </label>
+			</div>	
+			
+			<div class = "form-check form-check-inline">	
+				<input class = "form-check-input" type = "checkbox" id = "fri" name = "contact" value = "fri">
+				<label class = "form-check-label col-form-label" for = "fri"> F </label>
+			</div>
+			
+			<br /><br /><br />
+			
+			<input class = "btn badge-pill" type = "submit" name = "submit" value = "Send Request">
 			
 		</form>		
 		
 		<footer>
 			
-			<hr />				
 			<p> 123 Actual Lane <br />
 				Podunk, MA, 55555 <br />
 				123-456-7890 
 			</p>
 
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		
 	</body>
 	
